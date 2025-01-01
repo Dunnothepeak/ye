@@ -1,0 +1,268 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>OPEN WHEN</title>  
+  <style>  
+    body {  
+      margin: 0;  
+      font-family: 'Arial', sans-serif;  
+      background-color: #ffe4e6; 
+      color: #363233
+    }  
+    .container {  
+      padding: 20px;  
+      text-align: center;  
+    }  
+    header h1 {  
+      font-size: 3rem;  
+      margin-bottom: 20px;  
+      color: #363233;  
+    }  
+    .mail-grid {  
+      display: grid;  
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  
+      gap: 15px;  
+    }  
+    .mail-item {  
+      border: 1px solid #f8a5c2;  
+      border-radius: 15px;  
+      overflow: hidden;  
+      background-color: #fff;  
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  
+      transition: transform 0.3s ease;  
+    }  
+    .mail-item:hover {  
+      transform: scale(1.05);  
+    }  
+    .mail-item img {  
+      width: 100%;  
+      border-bottom: 1px solid #f8a5c2;  
+    }  
+    .mail-item span {  
+      display: block;  
+      padding: 10px;  
+      font-weight: bold;  
+    }  
+    .letter-content {  
+      background: #fff;  
+      border-radius: 15px;  
+      padding: 20px;  
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+      margin: 0 auto;  
+      max-width: 600px;  
+    }  
+    .back-link {  
+      display: inline-block;  
+      margin-top: 20px;  
+      padding: 10px 20px;  
+      background-color: #363233;  
+      color: #fff;  
+      text-decoration: none;  
+      border-radius: 10px;  
+      transition: background-color 0.3s ease;  
+    }  
+    .back-link:hover {  
+      background-color: #b63b6e;  
+    }  
+    #letters {  
+      display: none;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <div class="container" id="home">  
+    <header>  
+      <h1>OPEN WHEN</h1>  
+    </header>  
+ <div class="mail-grid">  
+  <div class="mail-item" data-letter="sad">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span> You're feeling sad</span>  
+    <small>This letter is for when you feel sad and need a hug.</small>  
+  </div>  
+   <div class="mail-item" data-letter="miss">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>Miss me</span>  
+    <small>My wife misses me?? BEST WIFE IN THE WORLD.</small>  
+  </div>  
+  <div class="mail-item" data-letter="mad">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>Feeling mad</span>  
+    <small>If you're upset with me, let's make things right.</small>  
+  </div>  
+  <div class="mail-item" data-letter="happy">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>HAPPY HAPPY</span>  
+    <small>Do you want to share me your happiness?</small>  
+  </div>  
+  <div class="mail-item" data-letter="lost">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>Lost in Life</span>  
+    <small>Read this and I'll walk you to your destination in life.</small>  
+  </div>  
+  <div class="mail-item" data-letter="pain">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>Unwell :(</span>  
+    <small>Ill stay even in sickness</small> 
+  </div>
+   <div class="mail-item" data-letter="proud">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>When You're Proud of Yourself</span>  
+    <small>Let's cheer your accomplishments.</small>  
+  </div>  
+  <div class="mail-item" data-letter="enemy">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>Feeling that everyone hates you?</span>  
+    <small>Im your only teammate, click me Let's get through that together.</small>  
+  </div>  
+  <div class="mail-item" data-letter="scared">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>In fear</span>  
+    <small>Are you scared of something? anything not just supernatural beings? I'll ease that.</small>  
+    </div>
+  <div class="mail-item" data-letter="fight">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>When We are in Big Argument</span>  
+    <small>You're not unloved, I'm just being stupid</small>  
+    </div>
+      <div class="mail-item" data-letter="motivation">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>You need Motivation</span>  
+    <small>You can do it baby</small>  
+    </div>
+      <div class="mail-item" data-letter="pretty">
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>You feel Pretty</span>  
+    <small>I'll shower you with compliments</small>
+    </div>
+      <div class="mail-item" data-letter="love">  
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>You love me soo much</span>  
+    <small>I clearly love you more</small>  
+    </div>
+      <div class="mail-item" data-letter="bored">
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>Bored</span>  
+    <small>Let's do some gimmiks</small>  
+    </div>
+    <div class="mail-item" data-letter="naughty">
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>Feeling naughty, hottie?</span>  
+    <small>Click me for pleasure</small>  
+    </div>
+      <div class="mail-item" data-letter="overme">
+    <img src="https://i.imgur.com/3oRxDMi.jpg" alt="Mail">  
+    <span>Tired of Me</span>  
+    <small>sorry :( I'll love you forever</small>  
+    </div>
+</div>
+  </div>  
+
+  <div class="container" id="letters">  
+    <header>  
+      <h1 id="letter-title"></h1>  
+    </header>  
+    <div class="letter-content" id="letter-content"></div>  
+    <a href="#" class="back-link" id="back-home">Back to Home</a>  
+  </div>  
+
+  <script>  
+    const lettersData = {  
+      sad: {  
+        title: "U're still cute when you are sad",  
+        content: "Hi baby, I heard you are sad right now. do you want to tell me why? Ill listen. I know things can be hard right now, and I don't want to see you experiencing that feeling. However, It's okay to be sad sometimes baby, you can cry all your pain out. Your feelings are valid and I can isten to everything. I'll comfort you til you're sleeping in my arms. I'm always here by your side. You mean the world to me, and I will stand by your side through every up and down. You don’t have to carry this weight alone—let me help you however I can. Take all the time you need to feel better, and know that I'll be here, loving you and supporting you, no matter what.",  
+      },  
+      mad: {  
+        title: "\"he's sorry\"\n-Kuromi",  
+        content: "Hello there, I'm kuromi im gerome's best friend. I know that you don't want to talk to him right now but I also know that he is really sorry for what he did. He's a good person and I bet he regret what he did. He even told me to tell you this message \n\”I can tell you're upset, and I really want to understand what happened. I’m sorry for anything I did to hurt you. Your feelings matter to me, and I want to work through this together. Please know I care about you, and I’m here to listen when you're ready to talk.\” See that? he cares for you. so if you're ready to talk to him again, please do. I know you guys can fix this. with all that said, Kuromi is out! ",  
+      },  
+      miss: {  
+        title: "I miss you moreee",  
+        content: "Hi baby, what a coincidence, I miss you toooooo. I miss you more than you could ever perceived. everytime that I am not by your side it feels incomplete. I miss our little chit chats even if the sky is down. I miss holding your hand. I can't wait to be with you again baby, I want to see youu. I can't help it. \n\noh I forgot, you are here cause you missed me hehe. What do you miss about me? my sillyness? my words? my dirty mind? Worry not my baby, Im still yours. even if we are not together, my presence is always attached to you. I love you baby take care!! ",  
+      },  
+      happy: {  
+        title: "Ohh look at that cute smirkk",  
+        content: "BABYYYYYY!!!! IT'S SO GOOD SEEING YOU SMILEE! what made my queen happy huh? is it a gift, some food, maybe a new friend? Whatever it is I'm glad that you went here to read this. I love seeing you happy. Everything around you lights up and glows when I see you laughing, I might be schizophrenic but that's what I really feel. I'm the happiest man alive knowing that the person i love the most is happy. I love you so much, your smile is the best tool to make my day. �",  
+      },
+      lost: {  
+        title: "Let me be your guidance",  
+        content: "Izzy my baby. You're feeling lost i see. is it because you don't know what to do or what is next? if that's the case here's what you can do. Take your time resting, and don't think of your problems. if you can't rest you can always talk to me, you know that. I'll comfort you anytime. You can also remember the reason why you are fighting for your own dreams. You want to be a pilot right, cause you were so interested in planes when you went to the airport. I know you can achieve this dream baby. If you're lost Ill guide you, let's continue our dreams together, I love youu. ",  
+      },
+      pain: {  
+        title: "FUCK THAT DISEASE/INJURY",  
+        content: "Aww baby I’m really sorry you’re not feeling well. Is it because of that goddamn period or is it because of a disease. I really hope you're okay. Please take care of yourself and rest as much as you need. If there’s anything I can do to make you feel better, let me know. I’m thinking of you and hoping you get better soon. Yoi can get through this my baby, I would take care of you If i could. For now here is a kiss to make you feel a lil better. mwaaaaaaaa love you baby",  
+      },
+      proud: {  
+        title: "Wowwwww nice one baby",  
+        content: " I WONDER WHAT YOU DID HEHE! I’m incredibly proud of you and everything you've accomplished. Seeing how hard you’ve worked and how far you've come just makes me admire you even more truly my perfect president. You’ve put in so much effort, and it’s beautiful to watch you succeed and feel proud of what you’ve achieved. Your strength and determination inspire me every day, and I hope you never stop believing in yourself because you’re capable of even more amazing things. Enjoy this moment – you truly deserve it. I’ll always be here, cheering for you, no matter what comes next MWAAA LOVE YA",  
+      },
+      enemy: {  
+        title: "Only I can love you fully",  
+        content: "OHHH HERE THEY GO AGAIN, HURTING MY BABY. what did they do to you? you can tell me every detail if the tea. I'm always I know it’s hard to feel like that, but I want you to know that you are so loved and important to so many people, including me. Sometimes, our minds can make us believe things that aren’t true, but the way I see it, you bring so much goodness into the world, and I’m thankful for you every day. You don’t have to face this alone—I’m here, and I’ll always remind you of the incredible person you are, even on the tough days. Don’t let those thoughts define you, because you mean so much more than that.\nKAHIT AYAW NILA SAYO, ANDITO AKO I LOVE YOU ",  
+      },
+      scared: {  
+        title: "Fear not darling",  
+        content: "Take a deep breath first, okay so what is it? a ghost? an old memory? or the thought that I would leave you someday? (I won't). I know you're easily getting scared specially in the dark, but imagine it like this baby, You have your own guardian angel guiding your back, to add to that You have my guardian angel, I asked him to take care of you since I can handle myself. Nothing in this world can kill you know, you're the most overpowered so be not afraid. I'm always praying for your safety cause I love you so much. If you are afraid of something that is not a supernatural being then listen. You are anxious baby, it's better to talk to me. I love you so I'll always listen ",  
+      },
+      fight: {  
+        title: "Im at fault",  
+        content: "hi baby, im not mad talk to me please, I care about you too much to let this get in the way. I’m sorry for the part I’ve played in this, and I want to make things right. We might not agree on everything, but we can work through this together. Your feelings matter to me, and I’m ready to listen and understand. Let's fix this maturely, I'd give up everything to fix this, You know I love you so please comeback to me. this is but a hurdle that we can get through. I love you so much baby I could never be mad at you",  
+      },
+      motivation: {  
+        title: "GO BABY!",  
+        content: "GIVE ME AN I\nGIVE ME A Z\nGIVE ME A Z\nGIVE ME A Y\nGOOOOOOOO Izzy\nwhat ever it is that you want to do, YOU MUSTTT DO IT, \"but it is hard thooo\" YOU KNOW WHAT IS HARD?? ME, I AM HARD, NOT THAT, I AM. IF YOU CAN DO ME, THEN YOU CAN DO THAT BABY!!",  
+      },
+      pretty: {  
+        title: "Hello there Gorgeous",  
+        content: "SEND SEND SEND SEND SEND SEND SEND SEND SEND SEND IT TO ME BABYYYY I WANNA SEEE YOUR PRETTYNESS, Are you sure you\'re not secretly a model for a beauty magazine? If beauty were a crime, you\'d definitely be serving a life sentence. I think even the sun gets jealous of how radiant you are. If there was a beauty contest, you\'d win first place and then retire undefeated. You must have a secret deal with the universe to be this gorgeous. I\'d ask for your beauty tips, but I think you\'re just naturally unfair. Did you steal all the beauty in the world? Because it looks like you\'ve got it all. I\'m starting to believe you\'re some sort of magical being sent to make the rest of us feel inferior. You must have been painted by the finest artists—because no one can look this perfect. Is there a \"How to Look Unbelievably Gorgeous\" manual you\'ve been following? I feel like I should be taking notes on how to look as amazing as you. I didn\'t know perfection existed until I saw you. You should be illegal because no one should look that good. I\'m convinced you\'re a walking work of art. If looking like a movie star was a crime, you\'d be serving time in Hollywood. You\'re so pretty, even the clouds are jealous of your glow. You could probably pull off wearing a potato sack and still look like a queen. It\'s like you were created to make everyone else look bad by comparison. I\'m sure you\'ve been given a \"glow\" upgrade no one else has access to. How do you manage to look like you just stepped out of a beauty magazine every day? You must be hiding some secret because no one is this naturally flawless. If looking this good was an Olympic sport, you\'d have all the gold medals. Are you sure you\'re not just a professional \"beautiful person\" hired by the universe? I feel like I should be paying an entry fee just to look at you. If you were a treasure, I\'d need a map just to find someone as stunning as you.�",  
+      },
+      love: {  
+        title: "I love ya moreee",  
+        content: "AWWWWWW YOU FINALLY OPENED THIS,you finally realised im lovely. I love youuuuuuuuu my baby, Thank you for choosing to love. I always love the feeling of your love. I feel so lucky to have you in my life. Your love means everything to me, and I can’t imagine my world without you in it. Every moment with you is a gift, and I’m so grateful for the way you care for me. I’ll always cherish you, and I promise to never take your love for granted. You make me feel so special, and I just want to make you as happy as you make me",  
+      },
+      bored: {  
+        title: "just talkkkkk to meeee",  
+        content: "DO THIS READ THEM ALL!!! Try a new recipe. Learn a new language. Start a journal. let's fuck. Do a puzzle. Watch a documentary. Read a book. Organize your closet. Take up drawing or sketching. Explore new music genres. Binge-watch a TV series. Kiss me. Call or video chat with a friend. Try a new workout routine. Practice meditation or mindfulness. Write a poem or short story. Try photography with your phone or camera. Clean your room or workspace. Learn a magic trick. Hug me. Listen to a podcast. Create a vision board. Start a DIY craft project. Do a random act of kindness. Hold my hand for 1 hour. Take an online course. Watch funny videos online. Plan your future travels. Create a new playlist. Learn how to juggle. Take a walk in nature. Plan your dream home or garden. Build a LEGO set. Try some origami. Experiment with makeup or hairstyles. Do some stretching or yoga. Start a blog or vlog. Sketch out your dream car or outfit. Do a deep clean of your kitchen or bathroom. Take a nap. Watch an old movie. Rearrange your furniture. Make a bucket list. Experiment with digital art or design. Cuddle me to sleep. Try a new video game. Listen to an audiobook. Write a letter to a future version of yourself. Go through old photos or memories. Touch yourself, please let me too uwu. Try a new app or game. Plant some indoor plants. Try knitting or crocheting. Make a scrapbook. Learn a new dance or routine. Plan a movie marathon with friends.",  
+      },
+      naughty: {  
+        title: "Wet or nahh?",  
+        content: "Talk to me instead, it'll be more exciting than reading this <3", 
+      },
+        overme: {  
+        title: "404 error Not Found",  
+        content: "You'll never get tired of me cause Ill treat you as my loving wife forever",  
+      },  
+    };  
+
+
+    const home = document.getElementById("home");  
+    const letters = document.getElementById("letters");  
+    const letterTitle = document.getElementById("letter-title");  
+    const letterContent = document.getElementById("letter-content");  
+    const backHome = document.getElementById("back-home");  
+
+    document.querySelectorAll(".mail-item").forEach((item) => {  
+      item.addEventListener("click", () => {  
+        const letterKey = item.getAttribute("data-letter");  
+        const letterData = lettersData[letterKey];  
+
+        if (letterData) {  
+          letterTitle.textContent = letterData.title;  
+          letterContent.textContent = letterData.content;  
+
+          home.style.display = "none";  
+          letters.style.display = "block";  
+        }  
+      });  
+    });  
+
+    backHome.addEventListener("click", (e) => {  
+      e.preventDefault();  
+      letters.style.display = "none";  
+      home.style.display = "block";  
+    });  
+  </script>  
+</body>  
+</html>  
